@@ -18,7 +18,7 @@
     /></noscript>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renda Extra com Energia: Entre para o Grupo Exclusivo!</title>
+    <title>Entre no Grupo!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -26,7 +26,6 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
         }
         
         body {
@@ -34,11 +33,11 @@
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             color: #fff;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0;
-            min-height: 100vh;
+            padding: 20px;
         }
         
         @keyframes gradient {
@@ -48,150 +47,32 @@
         }
         
         .container {
-            max-width: 800px;
-            width: 95%;
-            background: rgba(0, 0, 0, 0.8);
+            max-width: 500px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.75);
             border-radius: 20px;
-            overflow: hidden;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(10px);
-            animation: fadeIn 1s ease-out;
-            margin: 20px 0;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .header {
-            padding: 40px 20px;
+            padding: 40px 30px;
             text-align: center;
         }
         
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            line-height: 1.2;
-            color: #FFD700;
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            line-height: 1.3;
         }
 
-        .header h1 span {
-            color: #fff;
-            font-weight: normal;
-        }
-        
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .content {
-            padding: 20px 30px 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: #25D366;
-            margin-bottom: 30px;
-            text-align: center;
-            border-bottom: 2px solid #25D366;
-            padding-bottom: 10px;
-            width: fit-content;
-        }
-
-        /* --- Benefícios --- */
-        .benefits {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
-            width: 100%;
-        }
-        
-        .benefit-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 25px;
+        .main-image {
             width: 220px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .benefit-card:hover {
-            transform: translateY(-5px);
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #25D366;
+            margin-bottom: 30px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
         
-        .benefit-card i {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            color: #25D366;
-        }
-        
-        .benefit-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        /* --- CTA Principal --- */
-        .cta-box {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            padding: 30px;
-            margin: 20px 0 40px;
-            text-align: center;
-            width: 100%;
-            border: 2px solid #25D366;
-        }
-
-        .countdown h3 {
-            margin-bottom: 10px;
-            color: #fff;
-            font-size: 1.4rem;
-        }
-
-        #vagas-restantes {
-            font-size: 1.2rem;
-            color: #FFD700;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .timer {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .timer div {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 8px;
-            min-width: 70px;
-        }
-        
-        .timer span {
-            display: block;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        
-        .timer p {
-            font-size: 0.8rem;
-            margin-top: 5px;
-            text-transform: uppercase;
-        }
-
-        /* --- Botão --- */
         .whatsapp-button {
             display: inline-flex;
             align-items: center;
@@ -199,9 +80,9 @@
             background: linear-gradient(to right, #25D366, #128C7E);
             color: white;
             text-decoration: none;
-            padding: 20px 45px;
+            padding: 18px 40px;
             border-radius: 50px;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: bold;
             transition: all 0.3s;
             box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
@@ -217,267 +98,38 @@
         .whatsapp-button:hover {
             animation: none;
             transform: scale(1.1);
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
         }
         
         .whatsapp-button i {
             margin-right: 12px;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
-        /* --- Testemunhos --- */
-        .testimonials {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
-            width: 100%;
-        }
-
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 20px;
-            border-left: 5px solid #25D366;
-        }
-
-        .testimonial-card p {
-            font-style: italic;
-            margin-bottom: 10px;
-            opacity: 0.9;
-        }
-
-        .testimonial-card .author {
-            font-weight: bold;
-            color: #FFD700;
-        }
-
-        .stars i {
-            color: #FFD700;
-            font-size: 0.9rem;
-        }
-        
-        /* --- FAQ --- */
-        .faq-container {
-            width: 100%;
-            margin-bottom: 40px;
-        }
-        .faq-item {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            margin-bottom: 10px;
-            overflow: hidden;
-        }
-        .faq-question {
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            background: rgba(0, 0, 0, 0.2);
-        }
-        .faq-answer p {
-            padding: 20px;
-            opacity: 0.9;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 200px;
-        }
-        .faq-item.active .faq-question .icon::before {
-            content: "\f068"; /* Font Awesome minus icon */
-        }
-        .faq-question .icon::before {
-            font-family: "Font Awesome 6 Free";
-            content: "\f067"; /* Font Awesome plus icon */
-            font-weight: 900;
-            color: #25D366;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-        }
-        
-        /* --- Responsividade --- */
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .header p { font-size: 1.1rem; }
-            .section-title { font-size: 1.8rem; }
-            .benefit-card { width: 100%; max-width: 300px; }
-            .whatsapp-button { padding: 18px 35px; font-size: 1.2rem; }
-            .timer div { min-width: 60px; }
-            .timer span { font-size: 1.8rem; }
-        }
-        
         @media (max-width: 480px) {
-            .header h1 { font-size: 1.8rem; }
-            .content { padding: 20px 15px 30px; }
-            .timer { gap: 10px; }
-            .timer div { min-width: 50px; padding: 8px; }
-            .timer span { font-size: 1.5rem; }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .main-image {
+                width: 180px;
+                height: 180px;
+            }
+            .whatsapp-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Descubra Como Ter Uma <span>Renda Extra</span> Ajudando Pessoas a <span>Economizar na Conta de Luz!</span></h1>
-            <p>Junte-se ao nosso grupo exclusivo no WhatsApp e tenha acesso a uma oportunidade única, sem precisar vender nada.</p>
-        </div>
-        
-        <div class="content">
-            <h2 class="section-title">O que você vai encontrar no grupo?</h2>
-            <div class="benefits">
-                <div class="benefit-card">
-                    <i class="fas fa-hand-holding-dollar"></i>
-                    <h3>Renda Recorrente</h3>
-                    <p>Ganhe dinheiro todos os meses de forma passiva.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>Sem Vendas Diretas</h3>
-                    <p>Você não precisa vender nada, apenas mostras as pessoas como economizar.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-headset"></i>
-                    <h3>Apoio Exclusivo</h3>
-                    <p>Tenha suporte total da nossa equipe para tirar dúvidas.</p>
-                </div>
-            </div>
+        <h1>Clique aqui e entre no grupo</h1>
 
-            <div class="cta-box">
-                <div class="countdown">
-                    <h3>VAGAS PREENCHENDO RÁPIDO!</h3>
-                    <p id="vagas-restantes">🔥 Restam apenas <span id="vagas">27</span> vagas!</p>
-                    <div class="timer">
-                        <div><span id="hours">00</span><p>Horas</p></div>
-                        <div><span id="minutes">00</span><p>Minutos</p></div>
-                        <div><span id="seconds">00</span><p>Segundos</p></div>
-                    </div>
-                </div>
-                
-                <a href="https://chat.whatsapp.com/Fy1JAgPNuFkGh8yqx6peUF?mode=ems_copy_t" class="whatsapp-button" target="_blank">
-                    <i class="fab fa-whatsapp"></i> ENTRAR NO GRUPO AGORA
-                </a>
-            </div>
+        <img src="https://i.ibb.co/RprrhwkZ/energy-saving.jpg" alt="Economia de Energia" class="main-image">
 
-            <h2 class="section-title">Veja o que estão dizendo</h2>
-            <div class="testimonials">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>"Entrei desconfiado, mas em menos de um mês já estou vendo resultados. O suporte no grupo é incrível, tiraram todas as minhas dúvidas!"</p>
-                    <span class="author">- Marcos R., São Paulo</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>"Finalmente uma forma de renda extra que não exige que eu venda cursos ou produtos. Estou apenas ajudando pessoas a economizar e sendo pago por isso."</p>
-                    <span class="author">- Juliana P., Belo Horizonte</span>
-                </div>
-            </div>
-
-            <h2 class="section-title">Dúvidas Frequentes</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">Preciso investir algum dinheiro? <span class="icon"></span></div>
-                    <div class="faq-answer"><p>Não! O acesso ao grupo é 100% gratuito. Você não precisa colocar nenhum dinheiro do seu bolso para começar.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Preciso ter experiência? <span class="icon"></span></div>
-                    <div class="faq-answer"><p>Absolutamente não. Nós fornecemos todo o passo a passo e o suporte necessário dentro do grupo. Qualquer pessoa pode começar, independentemente da experiência.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">É seguro? Isso é legal? <span class="icon"></span></div>
-                    <div class="faq-answer"><p>Sim, 100% seguro e legal. Trabalhamos com empresas regulamentadas do setor de energia. Você estará oferecendo um benefício real e legal para as pessoas.</p></div>
-                </div>
-            </div>
-
-            <a href="https://chat.whatsapp.com/Fy1JAgPNuFkGh8yqx6peUF?mode=ems_copy_t" class="whatsapp-button" target="_blank" style="animation: none; transform: scale(1.02);">
-                <i class="fab fa-whatsapp"></i> ENTRAR NO GRUPO AGORA
-            </a>
-
-        </div>
-        
-        <div class="footer">
-            <p>© 2025 - Todos os direitos reservados | Uma oportunidade única para sua independência financeira.</p>
-        </div>
+        <a href="https://chat.whatsapp.com/Fy1JAgPNuFkGh8yqx6peUF?mode=ems_copy_t" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Entrar no Grupo Agora
+        </a>
     </div>
-
-    <script>
-        // Contador regressivo (12 horas a partir do momento que a página é carregada)
-        function startCountdown() {
-            let duration = localStorage.getItem('countdownTarget');
-            if (!duration) {
-                duration = new Date().getTime() + 12 * 60 * 60 * 1000; // 12 horas
-                localStorage.setItem('countdownTarget', duration);
-            }
-            
-            const timer = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = duration - now;
-                
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                document.getElementById("hours").textContent = String(hours).padStart(2, '0');
-                document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
-                document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-                
-                if (distance < 0) {
-                    clearInterval(timer);
-                    document.querySelector(".countdown h3").textContent = "OFERTA ENCERRADA!";
-                    document.getElementById("vagas-restantes").textContent = "As vagas para esta oferta se esgotaram."
-                    localStorage.removeItem('countdownTarget');
-                }
-            }, 1000);
-        }
-        
-        // Contador de vagas
-        function vagasCountdown() {
-            const vagasSpan = document.getElementById('vagas');
-            let vagas = parseInt(vagasSpan.textContent);
-
-            const interval = setInterval(() => {
-                if (vagas > 5) {
-                    vagas--;
-                    vagasSpan.textContent = vagas;
-                } else {
-                    clearInterval(interval);
-                }
-            }, Math.random() * (45000 - 25000) + 25000); // Atualiza a cada 25-45 segundos
-        }
-
-        // Acionador do FAQ
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                faqItems.forEach(i => i.classList.remove('active'));
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-
-        window.onload = function() {
-            startCountdown();
-            vagasCountdown();
-        };
-    </script>
 </body>
 </html>
